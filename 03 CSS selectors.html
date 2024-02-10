@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More about selectors</title>
+    <style>
+
+        /* this selects all the childs */
+        /* div p{
+            color: brown;
+        }*/
+
+        /* div li{
+            color: green;
+        } */
+
+        /* div ul p{
+            color: green;
+        } */
+
+        /* this select next childs */
+        div > p{
+            color: brown;
+        }
+
+        /* this selects siblings  */
+        /* this selects the next p to div */
+        div + p
+        {
+            color: green;
+        }
+
+
+        /* tag selector */
+        /* body{
+            background-color:blueviolet;
+        } */
+        
+        /* p{
+            color: red;
+        }
+
+        /* id selector */
+        /* #hello{
+            color: brown;
+        }
+
+        /* class selector */
+        /* .pink{
+            color: rgb(244, 16, 233);
+        } */
+
+        /* group selector */
+        /* #math, .pink, a, #science>ul>.pink{
+            background-color:bisque;
+        } */
+
+        /* nested selector */
+        /* #science>ul>.pink{
+            color: rgb(0, 132, 255);
+        } */
+
+
+    </style>
+    
+</head>
+<body>
+    <h1> More about selectors</h1>
+    <div class="container">
+        <p>This is para under div</p>
+        <div>
+            <p>This is para under two divs</p>
+            <ul>
+                <li>Hello</li>
+                <p>This is para under div - div - ul - p</p>
+            </ul>
+        </div>
+        <p>This is para after div ie, sibling</p>
+
+    </div>
+</body>
+</html>

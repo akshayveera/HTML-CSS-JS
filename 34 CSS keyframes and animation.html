@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key-frames and Animation</title>
+    <style>
+        .container
+        {
+            background-color: yellowgreen;
+        }
+
+        .box
+        {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: relative;
+            /* animation-name: anime; */
+            /* animation-name: animee; */
+            /* animation-duration: 4s; */
+            /* animation-timing-function: ease-in; */
+            /* animation-iteration-count: 1; */
+            /* animation-fill-mode: forwards; */
+            /* animation-delay: 1s; */
+            /* animation-direction: reverse; */
+
+            /* shorthand for animation properties  */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+
+            /* remember the order of properties like this n-d-t-d-i-f */
+
+            animation: animee 4s ease-out 1s 2 none;
+
+
+        }
+
+        /* this using from and to */
+        @keyframes anime
+        {
+            from{
+                width: 200px;
+            }
+            to
+            {
+                width: 400px;;
+            }
+        }
+
+        /* this is using the percentage of duration time of animation */
+        @keyframes animee
+        {
+            0%
+            {
+                top: 0%;
+                left: 0%;
+            }
+            25%
+            {
+                top: 0px;
+                left: 400px;                
+            }
+
+            50%
+            {
+                top: 400px;
+                left: 400px;
+            }
+
+            75%
+            {
+                top: 400px;
+                left: 0px;
+            }
+
+            100%
+            {
+                top: 0%;
+                left: 0%;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Animation box
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .container
+        {
+            display: grid;
+            /* grid-template-columns: 500px 400px 100px ; */
+            /* grid-template-columns: 500px 400px auto ; */
+            /* grid-template-columns: auto 400px 100px ; */
+            /* grid-template-columns: 1fr 5fr 3fr; */
+            /* grid-template-columns: 1fr 7fr 2fr; */
+            grid-template-columns: repeat(10, auto);
+            grid-gap: 10px;
+        }
+
+        .item
+        {
+            border: 2px solid rgb(62, 16, 105);
+            background-color: rgb(160, 98, 218);
+            height: 20px;
+            padding: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">ITEM-1</div>
+        <div class="item">ITEM-2</div>
+        <div class="item">ITEM-3</div>
+        <div class="item">ITEM-4</div>
+        <div class="item">ITEM-5</div>
+        <div class="item">ITEM-6</div>
+        <div class="item">ITEM-7</div>
+        <div class="item">ITEM-8</div>
+        <div class="item">ITEM-9</div>
+        <div class="item">ITEM-10</div>
+        <div class="item">ITEM-11</div>
+        <div class="item">ITEM-12</div>
+        <div class="item">ITEM-13</div>
+        <div class="item">ITEM-14</div>
+        <div class="item">ITEM-15</div>
+        <div class="item">ITEM-16</div>
+        <div class="item">ITEM-17</div>
+        <div class="item">ITEM-18</div>
+        <div class="item">ITEM-19</div>
+        <div class="item">ITEM-20</div>
+    </div>
+</body>
+</html>

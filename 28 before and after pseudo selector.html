@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+        }
+
+        .navigation
+        {
+            display: flex;
+            list-style: none;
+            padding: 40px 30px;
+            margin: 10px 20px;
+            font-size: 20px;
+            justify-content: center;
+        }
+
+        li{
+            padding: 0px 15px;            
+        }
+
+        /* section::before
+        {
+            content:"This is a temporary line just to check before property";
+            color: blueviolet;
+
+        }
+
+        section::after
+        {
+            content:"This is a temporary line just to check after property";
+            color: blueviolet;
+        } */
+
+        header::before{
+            background: url('https://picsum.photos/seed/picsum/1600/900');
+            content: "";
+            position: absolute;
+            width:100%;
+            height:100%;
+            top:0px;
+            left:0px;
+            z-index:-1;
+            opacity: 30%;
+
+        }
+
+        section{
+            padding: 10px 20px;
+            font-size: 15px;
+            /* border: 2px solid white; */
+            height : 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section h1{
+            font-size: 3rem;
+            text-align: center;
+
+        }
+
+        section p
+        {
+            padding: 0px 30px;
+            text-align: center;
+            margin: 0px 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="head">
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="list">Home</li>
+                <li class="list">Services</li>
+                <li class="list">About</li>
+                <li class="list">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Welcome to coding</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, quod minima illo odio unde quos enim fugit ipsa totam doloremque optio atque deleniti odit repudiandae molestias necessitatibus. Iusto officia ipsa quidem deleniti delectus, minus laborum corporis, rem sequi quae fugiat dolores corrupti! Aliquid magnam ullam deleniti hic! Labore, esse consequuntur?</p>
+    </section>
+</body>
+</html>

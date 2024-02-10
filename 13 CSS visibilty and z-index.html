@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilty and z-index</title>
+    <style>
+        
+        .box
+        {
+            border: 3px solid black;
+            width: 20%;
+            height: 200px;
+        }
+
+        /* visiblity: hidden; hides the element but reserves the place for it */
+        /* display: none; hides the element and also does not reserve the place for it  */
+
+        /* z-index works only on whose position is set as relative, absolute, fixed or sticky it doesn't work when position is static
+        z-index stacks the elements in the increasing order of the value given to it */
+
+        #box1
+        {
+            background-color: red;
+            position: relative;
+            /* visibility: hidden; */
+            /* display: none; */
+            top: 100px;
+            z-index: 2;
+
+        }
+        #box2
+        {
+            background-color: blue;
+            position: relative;
+            top: 20px;
+            z-index: 1;
+
+        }
+        #box3
+        {
+            background-color: green;
+            position: relative;
+            z-index: 3;
+        }
+        #box4
+        {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

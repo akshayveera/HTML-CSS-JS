@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child pseudo selectors</title>
+    <style>
+        .container
+        {
+            border : 3px solid black;
+            padding: 20px;
+            width : 30%;
+            margin: auto;
+        }
+
+        input
+        {
+            display: block;
+            padding:10px;
+            margin: 10px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"]
+        {
+            border: 2px solid rgb(133, 0, 129);
+        }
+
+        input[type="button"]
+        {
+            background-color: rgb(55, 55, 55);
+            color: white;
+            margin: auto;
+        }
+
+        a[target]
+        {
+            color:rgb(133, 0, 129)
+        }
+
+        li 
+        {
+            color:rgb(13, 145, 37)
+        }
+
+
+
+        li:nth-child(5)
+        {
+            color:rgb(133, 0, 129);
+        }
+
+
+
+        li:nth-child(2n+1)
+        {
+            color:rgb(133, 0, 129);
+        }
+
+        /* odd elements */
+        li:nth-child(2n+1)
+        {
+            background-color: rgb(13, 145, 37);
+        }
+
+        /* even elements */
+        li:nth-child(2n)
+        {
+            background-color: rgb(133, 0, 129);
+        }
+
+        .mandatory::after{
+            content: "*";
+            color: red;
+        }
+
+
+        #item1::after{
+            content: "important";
+            background-color: azure;
+            color: red;
+        }
+
+        label{
+            padding-inline: 10px;
+        }
+
+        label[for="name"]::after,label[for="email"]::after{
+            content: "*";
+            color: red;
+        }
+
+        label[for="password"]::before{
+            content: "*";
+            color: blue;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><a href="https://google.com" target="_blank">Google </a></h1>
+        <h1><a href="https://facebook.com" >Facebook</a></h1>
+        <form action="" class="form-ctrl">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="mandatory" placeholder="enter your name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="" placeholder="enter your mail">
+            <label for="password" >Password</label>
+            <input type="password" id="password" name="" placeholder="enter your password">
+            <input type="button" class="mandatory" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item1</li>
+            <li class="item" id="item2">Item2</li>
+            <li class="item mandatory" id="item3">Item3</li>
+            <li class="item" id="item4">Item4</li>
+            <li class="item" id="item5">Item5</li>
+            <li class="item" id="item6">Item6</li>
+            <li class="item" id="item7">Item7</li>
+            <li class="item" id="item8">Item8</li>
+            <li class="item" id="item9">Item9</li>
+            <li class="item" id="item10">Item10</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

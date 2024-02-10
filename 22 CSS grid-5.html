@@ -1,0 +1,76 @@
+
+<!-- grid areas -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas</title>
+    <style>
+
+        .container
+        {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'main main main aside'
+            'footer footer footer footer';
+        }
+
+        #navbar
+        {
+            grid-area: navbar;
+        }
+
+        #main
+        {
+            grid-area: main;
+        }
+
+        #aside
+        {
+            grid-area: aside;
+            
+        }
+
+        #footer
+        {
+            grid-area: footer;
+        }
+
+        .box
+        {
+            border: 2px solid rgb(62, 16, 105);
+            background-color: rgb(160, 98, 218);
+            padding: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">
+            <h1>Navbar</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, alias quis. Recusandae magni praesentium ex tempora, laboriosam illo culpa ullam!
+        </div>
+
+        <div id="main" class="box">
+            <h1>Main</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum placeat laudantium quasi temporibus numquam molestias libero, laboriosam tempora perferendis illum sint optio, provident obcaecati officiis ea doloremque. Necessitatibus quam, modi odit rem dolor odio vel, veniam qui nulla sint sequi quas amet illo officiis. Sed labore eum molestias nemo quae deserunt sunt voluptatem mollitia, debitis, natus fugit id dignissimos quod quo dolorum! Quod, dolorum sequi! Eius labore repudiandae optio animi blanditiis placeat iste non ipsam aspernatur voluptatem ipsum omnis dolorem laboriosam consectetur doloremque exercitationem sit quae, sed eum reiciendis consequatur nihil? Quis, facere veniam ratione nobis eum exercitationem non!
+        </div>
+
+        <div id="aside" class="box">
+            <h1>Aside</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos at laborum eius ut sunt commodi quam facere odio harum dolorum reiciendis, rem excepturi adipisci mollitia, nemo sapiente? Quaerat assumenda necessitatibus dolores quo fugit adipisci consectetur ab facere, ea nemo, corrupti earum incidunt iure voluptates alias pariatur non commodi, quis totam dolorem culpa expedita! Dolore pariatur iure esse nemo nesciunt expedita neque dicta officia maiores quod illo aut earum non omnis, deleniti perspiciatis asperiores animi ipsam consectetur? Cumque aut nobis tenetur animi itaque dolorem assumenda deleniti necessitatibus, non maiores, aspernatur officia ipsam voluptatem reiciendis dolor omnis! Voluptatibus libero minima dolorem quis.
+        </div>
+
+        <div id="footer" class="box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque eos nobis laboriosam corrupti eaque aliquam at suscipit porro aliquid vero.
+        </div>
+    </div>
+</body>
+</html>

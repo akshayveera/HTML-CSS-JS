@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size units</title>
+    <style>
+
+        /* px - is the fixed size which is equal to 1/96th of an inch  */
+        /* % - is the size calculated relative to the parent element  */
+        /* em - no.of times to its parents size */
+        /* rem - no.of times to its root elements size */
+
+        /* many browsers prefer default value of 1rem or 1em is equal to 16px */
+
+        html{
+            font-size: 20px;
+        }
+
+        .container
+        {
+            border: 2px solid black;
+
+        }
+
+        h1
+        {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #head1
+        {
+            
+            font-size: 5em;  
+            /* em is the times of its parent element */
+            padding: 2em;
+            /* padding is done relative to the font size ie, 2times(font size) */
+        }
+
+        #head2
+        {
+            font-size: 3rem;
+        }
+
+        h1 p{
+            font-size: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="head1">
+            This is heading 1
+            <p>this is para</p>
+        </h1>
+        <h1 id="head2">This is heading 2</h1>
+        <h1 id="head3">This is heading 3</h1>
+    </div>
+</body>
+</html>

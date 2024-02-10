@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+
+        body{
+            border: 2px solid black;
+            /* height: 300vh; */
+            /* position: relative; */
+        }
+
+        .container{
+            background-color: rgb(161, 161, 161);
+            width: 500px;
+            height: 800px;
+            /* margin: 100px; */
+            /* position: relative; */
+            /* this is used to check the absolute property of green box  */
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;   
+            text-align: center;  
+            padding: 40px 0px;  
+            box-sizing: border-box;  
+            color: white;
+        }
+
+        #red{
+            background-color: red;
+            position:static;
+            
+        }
+
+        #purple{
+            background-color: purple;
+            position: relative;
+            top: 50px;
+            left: 100px;
+        }
+
+        #green{
+            background-color: green;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        #blue{
+            background-color: blue;
+            position: sticky;
+            top: 50px;
+            /* top: 0px; */
+            
+        }
+
+        #orange{
+            background-color: orange;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            border-radius: 50%;
+        }
+
+        .spacing{
+            height: 300vh;
+            border: 2px solid rgb(67, 178, 124);
+            margin: 10px;
+        }
+
+
+        /* css positions : static(default), relative, absolute, fixed, sticky */
+
+        /* relative : the position of element is relative to its original position. you can set top,right,bottom,right to where you want to move 
+        ex:
+        position: relative;
+            top: 20px;
+            left: 20px;
+        */
+        /* absolute : the position of element is relative to its first parent position whose display is not static(relative or absolute). you can set top,right,bottom,right to where you want to move 
+        ex:
+        position: absolute;
+            top: 20px;
+            left: 20px;
+        */
+        /* fixed : the position of element is relative to its browser window position ie, the position will be fixed even if we scroll. you can set top,right,bottom,right to where you want to move 
+        ex:
+        position: fixed;
+            right: 10px;
+        */     
+        /* sticky : the position of element is fixed in its parent position ie, the position will be fixed in the parent until the parent is in the frame. you can set top,right,bottom,right to where you want to move 
+        ex:
+        position: fixed;
+            right: 10px;
+        */   
+
+
+        
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box" id="red">static</div>
+        <div class="box" id="purple">relative</div>
+        <div class="box" id="green">absolute</div>
+        <div class="box" id="blue">sticky</div>
+        <div class="box" id="orange">fixed</div>
+    </div>
+
+    <div class="spacing"></div>
+    
+</body>
+</html>

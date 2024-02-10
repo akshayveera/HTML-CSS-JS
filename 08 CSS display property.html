@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+
+        /* inline - doesnt start on new line and takes the minimun possible length */
+        /* in inline margin and padding works only left and right it doesnt work top nd bottom */
+        /* block - starts on newline and takes the max possible length */
+        /* inline-block - here we can set the width */
+        header{
+            border: 4px solid blue;
+            border-radius: 7px;
+            margin: auto;
+            width: 40%;
+            background-color: rgb(255, 255, 91);
+        }
+
+        img{
+            width: 150px;
+            display: block;
+            margin: auto;
+
+        }
+
+        #kobe{
+            margin: 0px;
+            font-family: 'Lobster', 'cursive';
+            text-align: center;
+            color: blue;          
+        
+        }
+
+        .box{
+            border: 3px solid rgb(0, 0, 98);
+            background-color: rgb(157, 186, 255);
+            border-radius: 10px;
+            color: rgb(0, 0, 98);
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            width : 30%;
+            box-sizing: border-box;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header id="top">
+        <img src="images/kobe.png" alt="kobe image" id="eight">
+        <h1 id="kobe">Kobe Bryant - the legend</h1>
+    </header>
+
+    <div class="box">
+        <h1>heading 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, distinctio facere natus rem ad illo est quasi magnam officiis pariatur at corporis ea fuga modi fugit voluptatibus sed. Magnam adipisci repellendus ipsum laboriosam ut distinctio perspiciatis ex eum, consequatur, delectus consectetur non a nulla!</p>
+    </div>
+    <div class="box">
+        <h1>heading 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, distinctio facere natus rem ad illo est quasi magnam officiis pariatur at corporis ea fuga modi fugit voluptatibus sed. Magnam adipisci repellendus ipsum laboriosam ut distinctio perspiciatis ex eum, consequatur, delectus consectetur non a nulla!</p>
+    </div>
+    <div class="box">
+        <h1>heading 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, distinctio facere natus rem ad illo est quasi magnam officiis pariatur at corporis ea fuga modi fugit voluptatibus sed. Magnam adipisci repellendus ipsum laboriosam ut distinctio perspiciatis ex eum, consequatur, delectus consectetur non a nulla!</p>
+    </div>
+</body>
+</html>

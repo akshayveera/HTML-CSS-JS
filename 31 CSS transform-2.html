@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+        
+        body{
+            margin: 0px;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: #ccc;
+            margin-inline: auto;
+            margin-top: 150px;
+            
+        }
+
+        .item{
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            background: linear-gradient(blue, red);
+            transition: all 0.5s ease ;
+
+        }
+
+        .item:hover{
+            /* transform : scale, skew, rotate, translate*/
+
+            /* scale(no.of times that of its size) */
+            /* scale wrt both x and y axes  */
+            /* transform : scale(2);   */            
+            transform: scale(2,2) ;
+            /* scale wrt to x-axis  */
+            /* transform: scaleX(2); */
+            /* scale wrt to y-axis  */
+            /* transform: scaleY(2); */
+            /* scale wrt to z-axis  */
+            /* transform: scaleZ(2); */
+
+            /* skew(deg)  */
+            /* transform: skew(20deg); = skewX(20deg)  */
+            /* transform: skewX(20deg); */
+            /* transform: skewy(40deg); */
+            /* skew(x,y) */
+            /* transform: skew(20deg, 40deg);  */
+
+            /* rotate(deg) */
+            /* default is wrt to z-axis  */
+            /* transform: rotate(20deg); 
+            transform: rotate(-20deg);
+            transform: rotateZ(50deg);
+            transform: rotateX(40deg);
+            transform: rotateX(90deg);
+            transform: rotateX(180deg);
+            transform: rotateY(40deg); */
+            transform: rotate(40deg);
+
+            
+            /* translate  */
+            /* trnaslate() = translate(x, y); */
+            /* transform: translateX(50px); */
+            /* transform: translate(50px); */
+            /* transform: translateY(50px); */
+            /* transform: translate(0,50px); */
+            /* transform: translate(30px ,50px); */
+            /* transform: translate(50%, 50%); */
+            
+            /* we can also write all combined  */
+            /* transform: scale(1.5) skew(20deg) rotate(20deg) translate(30px, 30px); */
+            
+            /* default transform origin is center of the box */
+            /* that means transformation happens wrt center of the element */
+            /* using transfrom-origin we can change that  */
+            /* transform-origin: top;            
+            transform-origin: left;            
+            transform-origin: right;            
+            transform-origin: bottom;            
+            transform-origin: center;            
+            transform-origin: bottom center;       
+            transform-origin: 0% 0%;       
+            transform-origin: 100% 100%;*/
+            transform-origin: 100px 0px;               
+
+            
+
+            
+        }      
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="item">
+            BOX
+        </div>
+    </div>
+
+</body>
+</html>

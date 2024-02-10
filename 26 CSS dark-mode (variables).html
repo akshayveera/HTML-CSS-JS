@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+
+    <style>
+        :root{          
+
+            /* variables */
+            --primary-background-color : #ccc;
+            --secondary-background-color: #999;
+            --secondary-text-color: #333;
+            --primary-text-color: #222;
+            --small-padding: 10px;
+            --large-padding: 30px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-size: 1.3rem;
+        }
+
+        .container{
+            background-color: var(--primary-background-color);
+            min-height: 100vh;
+            text-align: center;
+            padding: var(--large-padding);
+            color: var(--primary-text-color);
+            
+        }
+
+        .container h1{
+            margin-bottom: 50px;
+        }
+
+        .card{
+            background-color: var(--secondary-background-color);
+            width: 50%;
+            margin-inline: auto;
+            margin-top: 50px;
+            padding: var(--large-padding);
+            border-radius: 10px;
+        }
+
+        .card h2{
+            padding-bottom: var(--small-padding);
+        }
+
+        .card p{
+            color: var(--secondary-text-color);
+        }
+
+        button{
+            padding: var(--small-padding);
+            border-radius: 5px;
+            border: none;
+            background-color: var(--secondary-background-color);
+            color: var(--primary-text-color);
+            font-weight: bold;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            
+        }
+
+        button:hover{
+            box-shadow: 0px 0px 5px var(--secondary-text-color);
+        }
+
+        /* dark mode  */
+
+        .dark-mode{
+            --primary-background-color : #444;
+            --secondary-background-color: #333;
+            --secondary-text-color: #888;
+            --primary-text-color: #ccc;
+        }    
+        
+    </style>
+</head>
+<body >
+    
+    <div class="container" id="main">
+        <h1>Main Heading</h1>
+
+        <button id="dark">dark mode</button>
+
+        <div class="card">
+            <h2 class="card-heading">Card Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, culpa quo sint provident est eaque quisquam excepturi sed! Perspiciatis, a!</p>
+        </div>
+
+        <div class="card">
+            <h2 class="card-heading">Card Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, culpa quo sint provident est eaque quisquam excepturi sed! Perspiciatis, a!</p>
+        </div>
+
+        <div class="card">
+            <h2 class="card-heading">Card Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, culpa quo sint provident est eaque quisquam excepturi sed! Perspiciatis, a!</p>
+        </div>
+
+        
+
+        <script>
+            const dark = document.getElementById("main");
+
+            dark.addEventListener("click", ()=>{
+                dark.classList.toggle("dark-mode");
+            })
+        </script>
+
+    </div>
+
+</body>
+</html>

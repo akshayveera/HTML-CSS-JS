@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        body{
+            background-color: #ccc;
+        }
+        
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: black;
+            margin: 150px auto; 
+            border: 2px solid black;           
+        }
+
+        .item{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+
+            /* animations  */
+            animation-name: anime;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-timing-function: ease-in;
+            animation-fill-mode: both;
+            
+
+        }
+
+        @keyframes anime {
+            from{
+                transform: translate(-400px);
+            }
+            to{
+                transform: translate(300px);
+            }
+        }
+
+        @keyframes circle {
+            0%{
+                transform: translate(0px,0px);
+            }
+            25%{
+                transform: translate(300px, 0px);
+            }
+            50%{
+                transform: translate(300px, 300px);
+            }
+            75%{
+                transform: translate(0px, 300px);                
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="item">
+
+        </div>
+    </div>
+
+</body>
+</html>

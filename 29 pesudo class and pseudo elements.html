@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        
+        body{
+            margin: 0;
+        }
+
+        /* .box{
+            font-size: 2rem;
+            background-color: black;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            display: none;
+        }
+
+        media queries
+
+        @media (width <= 450px){
+            .box-1{
+                display: block;
+            }
+        }
+
+        @media (451px <= width <= 850px){
+            .box-2{
+                display: block;
+            }
+        }
+
+        @media (851px <= width <= 1200px){
+            .box-3{
+                display: block;
+            }
+        }
+
+        @media (width >= 1201px){
+            .box-4{
+                display: block;
+            }
+        }  */
+
+        .container{
+            margin: 50px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        /* pseudo class  */
+
+        /* link, hover, active, visited  */
+
+        a{
+            font-size: 2rem;
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a:hover{
+            color: blueviolet;
+        }
+
+        a:active{
+            background-color: black;
+            color: white;
+        }
+
+        a:visited{
+            color: red;
+        }
+
+        /* nth-child(an+b)  */
+
+        li:nth-child(2n+1){
+            /* color: red; */
+            background-color: #ccc;
+        }
+
+        li:nth-child(10){
+            color: white;
+            background-color: blueviolet;
+        }
+
+        /* first-child(), last-child()  */
+
+        li:first-child{
+            color: white;
+            background-color: blueviolet;
+        }
+
+        li:last-child{
+            color: white;
+            background-color: blueviolet;
+        }
+
+
+        /* pseudo elements  */
+
+        /* before, after, first-letter, first-line  */
+
+        h3::before{
+            content: "I am before h3";
+            color: red;
+        }
+
+        h3::after{
+            content: "I am after h3";
+            color: blue;
+        }
+
+        .container p::after{
+            content: "*";
+            color: red;
+        }
+
+        .container>p::after{
+            content: "*";
+            color: blue;
+        }
+
+        h1::first-letter{
+            font-size: 3rem;
+            color: #555;
+
+        }
+
+        .box p::first-line{
+            color: brown;
+        }
+
+        /* selection  */
+        ::selection{
+            background-color: black;
+            color: lime;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>This is main heading</h1>
+
+        <div class="box">
+            <h3>This is sub heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, fugit veniam? Nemo commodi magnam corporis ab quisquam atque quis velit in culpa quod explicabo quibusdam itaque, doloribus deleniti id. Dolorum fugit repellendus labore ratione deserunt nihil necessitatibus amet earum et!</p>
+        </div>
+
+
+        <ul class="list">
+            <li class="item item-1">item-1</li>
+            <li class="item item-2">item-2</li>
+            <li class="item item-3">item-3</li>
+            <li class="item item-4">item-4</li>
+            <li class="item item-5">item-5</li>
+            <li class="item item-6">item-6</li>
+            <li class="item item-7">item-7</li>
+            <li class="item item-8">item-8</li>
+            <li class="item item-9">item-9</li>
+            <li class="item item-10">item-10</li>
+            <li class="item item-11">item-11</li>
+            <li class="item item-12">item-12</li>
+            <li class="item item-13">item-13</li>
+            <li class="item item-14">item-14</li>
+            <li class="item item-15">item-15</li>
+        </ul>
+
+        <a href="#" class="btn">click me</a>
+
+        <p>this is a para</p>
+
+
+    </div>
+
+
+
+
+    
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <style>
+        h1{
+            font-size: 3rem;
+        }
+        .container {
+            background-color: teal;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 450px;
+            padding: 10px;
+            row-gap: 10px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            display: flex;
+            border-radius: 5px;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .random{
+            background-color: aquamarine;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="head">JS is ❤️</h1>
+
+    <div class="container" id="container">
+        <div class="box first" id="box-1" >box-1</div>   
+        <!-- onclick="clickEvent()" event handler -->
+        <div class="box" id="box-2" >box-2</div>
+        <!-- onmouseover="mouseOver()" -->
+        <div class="box" id="box-3" >box-3</div>
+        <!-- onmousemove="mouseMove()" -->
+        <div class="box" id="box-4" >box-4</div>
+    </div>
+
+    <img src="images/react.png" alt="react" id="im">    
+
+    <div>
+        <button id="clickMe" onclick="clickEvent()">Click Me</button>
+    </div>
+
+    <div>
+        <form action="#" id="form">
+            <input type="text" id="input" >
+            <!-- onkeydown="keyEventDown()" onkeypress="keyEventPress()" onkeyup="keyEventUp()" -->
+        </form>
+    </div>
+
+    <!-- CSS should be placed at the starting of html
+    JS should be placed at the end of html -->
+
+    <!-- this is one type of scripting
+    directly writing js in script tags -->
+
+    <!-- <script>
+        let a = 5;
+        let b = 10;
+
+        console.log("a+b : ",a+b);
+
+        console.log("Hello, World");
+        console.log("I am curious to learn javascript");
+
+    </script> -->
+
+    <!-- <script src="scripts/01 variables.js"></script> -->
+    <!-- <script src="scripts/02 datatype.js"></script> -->
+    <!-- <script src="scripts/03 conditional statements and loops.js"></script> -->
+    <!-- <script src="scripts/04 array.js"></script> -->
+    <!-- <script src="scripts/05 functions.js"></script> -->
+    <!-- <script src="scripts/06 Arrow functions.js"></script> -->
+    <!-- <script src="scripts/07 hoisting.js"></script> -->
+    <!-- <script src="scripts/08 callback function.js"></script> -->
+    <!-- <script src="scripts/09 array callback function.js"></script> -->
+    <!-- <script src="scripts/10 setTimeout function.js"></script> -->
+    <!-- <script src="scripts/11 callback hell.js"></script> -->
+    <!-- <script src="scripts/12 function - diff ways.js"></script> -->
+    <!-- <script src="scripts/13 functions terminologies.js"></script> -->
+    <!-- <script src="scripts/14 closures.js"></script> -->
+    <!-- <script src="scripts/15 event listeners.js"></script> -->
+    <!-- <script src="scripts/16 trust issues of setTimeout.js"></script> -->
+    <!-- <script src="scripts/17 higher order functions.js"></script> -->
+    <!-- <script src="scripts/18 map, filter and reduce.js"></script> -->
+    <!-- <script src="scripts/19 promise.js"></script> -->
+    <!-- <script src="scripts/20 creating a promise.js"></script> -->
+    <!-- <script src="scripts/21 promise (ex-1).js"></script> -->
+    <!-- <script src="scripts/22 promise (ex-2).js"></script> -->
+    <!-- <script src="scripts/23 promise(example).js"></script> -->
+    <!-- <script src="scripts/24 async await.js"></script> -->
+    <!-- <script src="scripts/25 DOM manipulation.js"></script> -->
+    <!-- <script src="scripts/26 DOM events.js"></script> -->
+    <!-- <script src="scripts/27 DOM events bubbling and capturing.js"></script> -->
+    <!-- <script type="module" src="scripts/28 import export.js"></script> -->
+    <!-- <script src="scripts/30 error handling.js"></script> -->
+    <!-- <script src="scripts/31 this keyword.js"></script> -->
+    <script src="scripts/practice.js"></script>
+
+    
+</body>
+</html>

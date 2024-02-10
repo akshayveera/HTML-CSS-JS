@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+
+        *{
+            /* universal selector */
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #9277c3;
+        }
+
+
+        .main{
+            background-color: #c5b3e5;
+            border:3px solid #542f95;
+            padding: 50px;
+            margin: 20px;
+            color:#31165f;
+            border-radius: 40px;
+            width: 600px;
+            
+
+            /*
+            these are the different ways of setting padding or margin 
+            margins also can be set this way
+            
+            method-1
+            padding-top: 70px;
+            padding-right: 150px;
+            padding-bottom: 20px;
+            padding-left: 50px; 
+            
+            method-2
+            padding: 70px 150px 20px 50px ; --padding: top right bottom left;
+
+            method-3
+            padding: 90px 70px;padding: y(top and bottom) x(right and left);
+            */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <h2>I am heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quo aperiam rem quisquam exercitationem corporis, modi quibusdam maiores deserunt dolorum expedita eaque fugit officiis labore nisi voluptatem. Vero, similique inventore!</p>
+    </div>
+
+    <div class="main">
+        <h2>I am heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quo aperiam rem quisquam exercitationem corporis, modi quibusdam maiores deserunt dolorum expedita eaque fugit officiis labore nisi voluptatem. Vero, similique inventore!</p>
+    </div>
+
+    <div class="main">
+        <h2>I am heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quo aperiam rem quisquam exercitationem corporis, modi quibusdam maiores deserunt dolorum expedita eaque fugit officiis labore nisi voluptatem. Vero, similique inventore!</p>
+    </div>
+</body>
+</html>
