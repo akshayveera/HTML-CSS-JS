@@ -677,41 +677,60 @@
 // .then((orderDoneId)=>console.log("done"))
 
 
-const judgeNum = (num)=>{
+// const judgeNum = (num)=>{
 
-    return new Promise((resolve, reject)=>{
+//     return new Promise((resolve, reject)=>{
 
-        if(num > 0)
-        {
-            resolve ("Number is +ve");
-        }
-        else
-        {
-            setTimeout(()=>{
-                reject ("Number is -ve")
-            }, 5000);
-        }
-    })
+//         if(num > 0)
+//         {
+//             resolve ("Number is +ve");
+//         }
+//         else
+//         {
+//             setTimeout(()=>{
+//                 reject ("Number is -ve")
+//             }, 5000);
+//         }
+//     })
 
+// }
+
+// const fun = async ()=>{
+//     try{
+//         const p = await judgeNum(-1);
+//         console.log(p);
+//     }
+//     catch(err)
+//     {
+//         console.log(err);
+//     }
+// }
+
+// fun();
+
+
+
+// const p = judgeNum(-5);
+
+// console.log(p);
+
+// p
+// .then((data)=>{
+//     console.log(data);
+// })
+// .catch((err)=>{
+//     console.log(err);
+// })
+
+// setTimeout(()=>{
+//     console.log(p);
+// }, 6000);
+
+async function fun (){
+    console.log("async fun");
 }
 
-
-
-const p = judgeNum(-5);
-
-console.log(p);
-
-p
-.then((data)=>{
-    console.log(data);
-})
-.catch((err)=>{
-    console.log(err);
-})
-
-setTimeout(()=>{
-    console.log(p);
-}, 6000);
+console.log(fun());
 
 
 
