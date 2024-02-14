@@ -89,3 +89,5 @@ obj2.fun(); // this points to obj2 here, as its eclosing lexical context is obj2
 
 
 // this in call, apply, bind methods (sharing methods)
+
+// we can change this of a method using call, apply and bind
